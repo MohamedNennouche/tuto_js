@@ -103,7 +103,25 @@ On peut aussi supprimer un champ avec la fonction `delete()`
 delete(x["propertyName1"]);
 ```
 ## 3. Fonctions
+Les fonctions sont des structures de données permettant de déclarer un ensemble d'actions qui peuvent être ensuite réutiliser en l'appelant au lieu de remettre la suite d'action. La mise de son code sous forme de fonctions est une bonne pratique en programmation. 
+### 3.1 Déclaration d'une fonction
+On déclare une fonction avec la syntaxe suivante
+```js
+const functionName = function(paramName1, paramName2) {
+    function body;
+    return value; // optionnel elle peut ne rien retourner
+}
+```
+Dans ce cas on a déclaré une fonction prenant 2 paramètres et retournant une valeur
 
+
+### 3.2 Appel de la fonction
+On appelle la fonction en utilisant directement le nom qu'on y a donné
+```js
+let x = functionName(paramValue1, paramValue2);
+```
+
+__Remarque importante :__ Les variables simples sont passée comme valeur à part pour les objets qui sont passé par adresse. Cela veut dire que les variables de types standards sont copiés et passés à la fonction et par conséquent leur valeur n'est pas modifié en dehors de la fonction. 
 ## 4. Structures
 ### 4.1 Structures conditionnelles
 #### 4.1.1 If else

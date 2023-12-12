@@ -123,9 +123,69 @@ let x = functionName(paramValue1, paramValue2);
 
 __Remarque importante :__ Les variables simples sont passée comme valeur à part pour les objets qui sont passé par adresse. Cela veut dire que les variables de types standards sont copiés et passés à la fonction et par conséquent leur valeur n'est pas modifié en dehors de la fonction. 
 ## 4. Structures
+Dans un programme informatique on a souvent recours des structures pour effectuer des conditions pour faire ou non une action (structures conditionnelles) ou de répéter une action un certain nombre fois (boucles).
 ### 4.1 Structures conditionnelles
+Ils existent fondamentalement deux types de structures conditionnelles en JavaScript, `if else` et `switch`.
 #### 4.1.1 If else
+Cette structure est utilisée dans le cas où on a une condition claire sur une variable. 
+```js
+if(condition) {
+    body;
+};
+```
+On peut aussi avoir une condition sinon on effectue autre chose
+```js
+if (condition) {
+    body1;
+}
+else {
+    body2;
+};
+```
+On peut aussi bien sur avoir plusieurs conditions 
+```js
+if (condition1){
+    body1;
+}
+else if (condition2) {
+    body2;
+}
+else {
+    body3;
+};
+```
 #### 4.1.2 Switch
+Quand on a plusieurs conditions simples concaténée faisant intervenir des valeurs discretes on peut recourir au `switch` comme suit 
+```js
+switch(variableName) {
+    case variableValue1:
+        body1;
+        break;
+    case variableValue2:
+        body2;
+        break;
+    default: 
+        body3;
+};
+```
 ### 4.2 Boucles
+On utilise habituellement deux types de boucles, on se sert du `for loop` si on veut répeter un bout de code un certain nombre de fois. On se sert de la boucle `while loop` si on est dans le cas de : on fait ceci tant que cette condition est valide.  
 #### 4.2.1 For loop
+La syntaxe est très simple
+```js
+for(let loopParam = loopStart; loopParam < loopStop; loopParam += loopStep){
+    loopBody;
+};
+```
+Où on a : 
+- `loopParam` : indice de la boucle
+- `loopStart` : valeur initial de l'indice de la boucle
+- `loopStop` : valeur finale à laquelle la boucle doit s'arrêter
+- `loopStep` : Pas d'incrémentation de la boucle
 #### 4.2.2 While loop
+La syntaxe est la suivante 
+```js
+while(condition){
+    loopBody;
+};
+```

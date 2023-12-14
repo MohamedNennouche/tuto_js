@@ -2,3 +2,4 @@ $*
 node_modules
 package*
 TP/exo2/message_example.json
+*config.json

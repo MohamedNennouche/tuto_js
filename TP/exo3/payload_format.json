@@ -1,0 +1,37 @@
+{
+    "code": {
+        "position": 0,
+        "size": 1,
+        "unit": ""
+    },
+    "temperature": {
+        "position": 1,
+        "size": 2,
+        "unit": "°C"
+    },
+    "moisture": {
+        "position": 3,
+        "size": 2,
+        "unit": "%"
+    },
+    "light": {
+        "position": 5,
+        "size": 2,
+        "unit": "lux"
+    },
+    "presence": {
+        "position": 7,
+        "size": 1,
+        "unit": ""
+    },
+    "co2": {
+        "position": 8,
+        "size": 2,
+        "unit": "ppm"
+    },
+    "battery": {
+        "position": 10,
+        "size": 1,
+        "unit": "%"
+    }
+}

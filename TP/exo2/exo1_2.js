@@ -6,6 +6,13 @@ const fs = require("fs"); // to read files (file system for Javascript)
 
 
 // exo 1
+
+/**
+ * Fonction de décodage du message à un format lisible
+ * @param  {[str]} hexPayload Message hexadécimal contenant les informations sortant du capteur et qu'on devra décoder
+ * @param {[object]} payloadFormat Format du message hexadécimal qu'on devra décoder
+ * @return {[object]} Message décodé et écrit dans un format lisible
+ */
 const decode_hex_payload = function (hexPayload, payloadFormat) {
 
     // Initialisation du payload à retourner 
@@ -55,6 +62,12 @@ const decode_hex_payload = function (hexPayload, payloadFormat) {
 }
 
 // exo 2
+
+/**
+ * Fonction pour retrouver le message à décoder dans le format de message envoyé
+ * @param {[object]} message Format de sortie des capteurs contenant tous les champs et entre autre le message à décoder
+ * @return {[str]} Message héxadécimal à décoder
+ */
 const retrieve_hex_payload = function (message) {
     let parsedMessage = JSON.parse(message); // transfor the message (JSON) into a .js object
     return parsedMessage.uplink_message.decoded_payload.payload_hex; // location of the payload inside the message and return it

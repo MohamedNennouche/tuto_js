@@ -8,9 +8,10 @@ const fs = require("fs"); // to read files (file system for Javascript)
 
 
 /**
- * [bar description]
- * @param  {[type]} foo [description]
- * @return {[type]}     [description]
+ * Fonction de décodage du message à un format lisible
+ * @param  {[str]} hexPayload Message hexadécimal contenant les informations sortant du capteur et qu'on devra décoder
+ * @param {[object]} payloadFormat Format du message hexadécimal qu'on devra décoder
+ * @return {[object]} Message décodé et écrit dans un format lisible
  */
 const decode_hex_payload = function (hexPayload, payloadFormat) {
 

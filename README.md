@@ -125,8 +125,15 @@ __Remarque importante :__ Les variables simples sont passée comme valeur à par
 ## 4. Structures
 Dans un programme informatique on a souvent recours des structures pour effectuer des conditions pour faire ou non une action (structures conditionnelles) ou de répéter une action un certain nombre fois (boucles).
 ### 4.1 Structures conditionnelles
-Ils existent fondamentalement deux types de structures conditionnelles en JavaScript, `if else` et `switch`.
-#### 4.1.1 If else
+Ils existent fondamentalement deux types de structures conditionnelles en JavaScript, `if else` et `switch`. Avant cela on va aborder comment faire des test logiques tels que les comparaisons ou les égalités. 
+#### 4.1.1 Opérateurs logiques
+| Opérateur logique | Equivalent en JS |
+|:-:|:-:|
+| Egalité | === |
+| Négation | !== ou ! |
+| Supérieur ou égale | >= |
+| Inférieur ou égale | <= |>
+#### 4.1.2 If else
 Cette structure est utilisée dans le cas où on a une condition claire sur une variable. 
 ```js
 if(condition) {
@@ -154,7 +161,7 @@ else {
     body3;
 };
 ```
-#### 4.1.2 Switch
+#### 4.1.3 Switch
 Quand on a plusieurs conditions simples concaténée faisant intervenir des valeurs discretes on peut recourir au `switch` comme suit 
 ```js
 switch(variableName) {

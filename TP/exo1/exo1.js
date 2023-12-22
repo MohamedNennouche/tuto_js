@@ -49,7 +49,7 @@ const decode_hex_payload = function (hexPayload, payloadFormat) {
         if (field == "co2") {
             decodedPayload[field] = decodedPayload[field] * 10;
         }
-        else if ((field == "moisture") || (field == "temperature")) {
+        else if (field == "temperature") {
             decodedPayload[field] = decodedPayload[field] / 10;
         }
 

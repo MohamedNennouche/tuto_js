@@ -5,8 +5,8 @@ On utilise la fonction `console.log()` qui permet l'affichage d'un message dans 
 console.log("Hello world");
 ```
 ## 2. Variables
-### 2.1 Déclaration de la variable
-Pour déclarer une variable on utilise le mot clé `let` suivis du nom de la variable et on peut ajouter accessoirement une valeur initiale. 
+### 2.1 Déclaration des variables
+Pour déclarer une variable on utilise le mot clé `let` suivi du nom de la variable et on peut ajouter accessoirement une valeur initiale. 
 ```js
 let name = value;
 ```
@@ -51,7 +51,7 @@ On peut aussi prendre une partie d'un tableau au préalable créé avec la fonct
 x = x.slice(0,3);
 ```
 ### 2.4 Chaînes de caractères
-Les chaînes de caractères sont un type de variables particuliers, elles se déclarent exactement de la même manière
+Les chaînes de caractères sont un type de variables particulier, mais se déclarent exactement de la même manière
 ```js
 let x = "value";
 ```
@@ -63,23 +63,23 @@ On peut aussi avoir la longueur de la chaîne de caractères utilisant la foncti
 ```js
 x.length();
 ```
-On peut aussi concaténer plusieurs chaines de caractères avec l'opération addition `+`
+On peut aussi concaténer plusieurs chaînes de caractères avec l'opération addition `+`
 ```js
 let x = "Hello";
 let y = " World";
 let z = x + y; // "Hello World"
 ```
-On peut aussi tirer une partie d'une chaîne de caractère avec la fonction `.substring(firstIncluded, lastNotIncluded)`
+On peut aussi extraire une partie d'une chaîne de caractères avec la fonction `.substring(firstIncluded, lastNotIncluded)`
 ```js
 y = x.substring(1,4);
 ```
-Souvent en manipulant des chaînes de caractères on se retrouve dans la situation où on veut extraire les nombre qui sont à l'intérieur pour se faire on utilise habituellement deux fonctions `parseInt(string, base)` et `parseFloat(string, base)`. `parseInt()` permet d'extraire un nombre entier et ignorera tous les caractères non numériques. `parseFloat()` fait exactement la même chose à la différence qu'elle peut extraire les nombres réels. Bien sur on définit la base: binaire, octal, décimal, ou hexadécimal. 
+Souvent en manipulant des chaînes de caractères on se retrouve dans la situation où on veut extraire les nombre qui sont à l'intérieur pour se faire on utilise habituellement deux fonctions `parseInt(string, base)` et `parseFloat(string, base)`. `parseInt()` permet d'extraire un nombre entier et ignorera tous les caractères non numériques. `parseFloat()` fait exactement la même chose à la différence qu'elle peut extraire les nombres réels. Bien sûr, on définit la base: binaire, octal, décimal, ou hexadécimal. 
 ```js
 y = parseInt(x, 16); // hexadécimal
 z = parseFloat(x, 10); // décimal
 ```
 ### 2.5 Objets
-Les objets sont des structures de données plus complexes, elles peuvent regrouper plusieurs champs, par exemple une date de naissance regroupant le jour, le mois, et l'année de naissance. Ils se déclarent sensiblement de la même manière qu'une structure simple.
+Les objets sont des structures de données plus complexes. Elles peuvent regrouper plusieurs champs, par exemple une date de naissance regroupant le jour, le mois, et l'année de naissance. Ils se déclarent sensiblement de la même manière qu'une structure simple.
 ```js
 let x = {
     propertyName1 : propertyValue1;
@@ -103,7 +103,7 @@ On peut aussi supprimer un champ avec la fonction `delete()`
 delete(x["propertyName1"]);
 ```
 ## 3. Fonctions
-Les fonctions sont des structures de données permettant de déclarer un ensemble d'actions qui peuvent être ensuite réutiliser en l'appelant au lieu de remettre la suite d'action. La mise de son code sous forme de fonctions est une bonne pratique en programmation. 
+Les fonctions sont des structures de données permettant de déclarer un ensemble d'actions qui peuvent être ensuite réutilisées en l'appelant au lieu de réécrire toutes les instructions. Structurer son code sous forme de fonctions est une bonne pratique en programmation. 
 ### 3.1 Déclaration d'une fonction
 On déclare une fonction avec la syntaxe suivante
 ```js
@@ -121,11 +121,11 @@ On appelle la fonction en utilisant directement le nom qu'on y a donné
 let x = functionName(paramValue1, paramValue2);
 ```
 
-__Remarque importante :__ Les variables simples sont passée comme valeur à part pour les objets qui sont passé par adresse. Cela veut dire que les variables de types standards sont copiés et passés à la fonction et par conséquent leur valeur n'est pas modifié en dehors de la fonction. 
+__Remarque importante :__ Les variables simples sont passées comme valeurs à part pour les objets qui sont passés par adresse. Cela veut dire que les variables de type standard sont copiées et passées à la fonction et par conséquent leur valeur n'est pas modifiée en dehors de la fonction. 
 ## 4. Structures
-Dans un programme informatique on a souvent recours des structures pour effectuer des conditions pour faire ou non une action (structures conditionnelles) ou de répéter une action un certain nombre fois (boucles).
+Dans un programme informatique on a souvent recours à des structures pour effectuer des conditions pour faire ou non une action (structures conditionnelles) ou de répéter une action un certain nombre fois (boucles).
 ### 4.1 Structures conditionnelles
-Ils existent fondamentalement deux types de structures conditionnelles en JavaScript, `if else` et `switch`. Avant cela on va aborder comment faire des test logiques tels que les comparaisons ou les égalités. 
+Il existe fondamentalement deux types de structures conditionnelles en JavaScript, `if else` et `switch`. Avant cela on va aborder comment faire des tests logiques tels que les comparaisons ou les égalités. 
 #### 4.1.1 Opérateurs logiques
 | Opérateur logique | Equivalent en JS |
 |:-:|:-:|
@@ -149,7 +149,7 @@ else {
     body2;
 };
 ```
-On peut aussi bien sur avoir plusieurs conditions 
+On peut aussi bien sûr avoir plusieurs conditions 
 ```js
 if (condition1){
     body1;
@@ -176,7 +176,7 @@ switch(variableName) {
 };
 ```
 ### 4.2 Boucles
-On utilise habituellement deux types de boucles, on se sert du `for loop` si on veut répeter un bout de code un certain nombre de fois. On se sert de la boucle `while loop` si on est dans le cas de : on fait ceci tant que cette condition est valide.  
+On utilise habituellement deux types de boucles : on se sert du `for loop` si on veut répeter un bout de code un certain nombre de fois. On se sert du `while loop` si on est dans le cas de : on fait ceci tant que cette condition est valide.  
 #### 4.2.1 For loop
 La syntaxe est très simple
 ```js
@@ -186,7 +186,7 @@ for(let loopParam = loopStart; loopParam < loopStop; loopParam += loopStep){
 ```
 Où on a : 
 - `loopParam` : indice de la boucle
-- `loopStart` : valeur initial de l'indice de la boucle
+- `loopStart` : valeur initiale de l'indice de la boucle
 - `loopStop` : valeur finale à laquelle la boucle doit s'arrêter
 - `loopStep` : Pas d'incrémentation de la boucle
 #### 4.2.2 While loop

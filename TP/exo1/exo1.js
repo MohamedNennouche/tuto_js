@@ -33,7 +33,6 @@ const decode_hex_payload = function (hexPayload, payloadFormat) {
 
         // Si c'est un champ de 1 caractère ou 2
         if (size == 1) {
-
             // On tire la partie de la chaine de caractère correspondante à la position et on y ajoute 1
             hexString = hexPayload.substring(position * nbCharInByte, (position + 1) * nbCharInByte)
         } else {

@@ -105,6 +105,18 @@ const decode_hex_payload = function (hexPayload, payloadFormat) {
         console.log(field + " = " + decodedPayload[field] + payloadFormat[field].unit);
     }
 
+    // ajout de l'heure de réception de l'information
+    const dateActuelle = new Date();
+
+    // Extraire l'heure, les minutes et les secondes
+    const heure = dateActuelle.getHours();
+    const minutes = dateActuelle.getMinutes();
+    const secondes = dateActuelle.getSeconds();
+
+    // Construire une chaîne de caractères représentant l'heure actuelle
+    const heureActuelle = `${heure}:${minutes}:${secondes}`;
     // On retourne le message décoder en objet
+    console.log("L'heure actuelle est:", heureActuelle);
+    
     return decodedPayload;
 }

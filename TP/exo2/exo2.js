@@ -17,7 +17,7 @@ const retrieve_hex_payload = function (message) {
 }
 
 // Essai de la fonction
-
+//const fs = require("fs");
 // Un message test
 message = JSON.parse(fs.readFileSync(__dirname + "/message_example.json").toString())
 
